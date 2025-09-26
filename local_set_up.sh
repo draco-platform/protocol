@@ -131,7 +131,7 @@ print_success "Anchor build completed successfully!"
 
 print_step "Airdrop anchor account to deploy the contract"
 
-# This is the address of the solana-keygen new -o /Users/marc.quel/.config/solana/id.json
+# This is the address of the solana-keygen new -o /Users/userName/.config/solana/id.json
 # that we set as the account that anchor uses to deploy contracts
 ANCHOR_TEST_ACCOUNT="8GvqRwNRH71qgWfcuQThgbQ4VTJsMZamxDjcCQ3ie9uF"
 solana airdrop 1000 $ANCHOR_TEST_ACCOUNT
