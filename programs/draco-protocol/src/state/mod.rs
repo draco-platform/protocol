@@ -15,3 +15,9 @@ pub use lottery::*;
 
 pub mod ticket;
 pub use ticket::*;
+
+pub mod airdrop;
+pub use airdrop::*;
+
+pub mod airdrop_claimed;
+pub use airdrop_claimed::*;

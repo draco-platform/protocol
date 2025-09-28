@@ -140,5 +140,21 @@ pub mod draco_protocol {
         Ok(())
     }
 
+    pub fn create_airdrop(ctx: Context<CreateAirdrop>, airdrop_id: u64, name: String, supply: u64, amount_per_claim: u64, start_datetime: i64, end_datetime: i64) -> Result<()> {
+        msg!("draco_protocol::create_airdrop");
+        instructions::protocol_authority::enforce_protocol_authority(
+            ctx.accounts.protocol_authority.authority,
+            ctx.accounts.payer.key(),
+        )?;
+        instructions::airdrop::create(ctx, airdrop_id, name, supply, amount_per_claim, start_datetime, end_datetime)?;
+        Ok(())
+    }
+
+    pub fn claim_airdrop(ctx: Context<ClaimAirdrop>, airdrop_id: u64) -> Result<()> {
+        msg!("draco_protocol::claim_airdrop");
+        instructions::airdrop::claim(ctx, airdrop_id)?;
+        Ok(())
+    }
+
 }
 

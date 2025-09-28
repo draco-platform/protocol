@@ -75,5 +75,20 @@ pub enum ErrorCode {
     LotteryNotReadyToBeClosed,
 
     #[msg("Aritmetic overflow")]
-    ArithmeticOverflow
+    ArithmeticOverflow,
+
+    #[msg("Invalid airdrop start and end datetime")]
+    InvalidAirdropStartEndDatetime,
+
+    #[msg("Invalid airdrop supply")]
+    InvalidAirdropSupply,
+
+    #[msg("Airdrop has not started yet")]
+    AirdropNotStarted,
+
+    #[msg("Airdrop has ended")]
+    AirdropEnded,
+
+    #[msg("Airdrop supply exhausted")]
+    AirdropSupplyExhausted,
 }

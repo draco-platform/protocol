@@ -22,3 +22,6 @@ pub use lottery::*;
 pub mod utils;
 pub use utils::*;
 
+pub mod airdrop;
+pub use airdrop::*;
+
