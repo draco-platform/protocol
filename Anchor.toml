@@ -6,7 +6,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-draco_protocol = "9T31s54ByCVeDhoKdXc2vGeXag8pH4S77hzUnF7SWX7C"
+draco_protocol = "Gudf3TTqxeBuUX8USrSzon9zVQ8s1UTcpZFHGVqEhZH1"
 
 [registry]
 url = "https://api.apr.dev"

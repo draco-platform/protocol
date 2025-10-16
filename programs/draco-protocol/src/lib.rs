@@ -6,7 +6,7 @@ use anchor_lang::prelude::*;
 
 pub use instructions::*;
 
-declare_id!("9T31s54ByCVeDhoKdXc2vGeXag8pH4S77hzUnF7SWX7C");
+declare_id!("Gudf3TTqxeBuUX8USrSzon9zVQ8s1UTcpZFHGVqEhZH1");
 
 #[program]
 pub mod draco_protocol {
