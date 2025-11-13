@@ -9,9 +9,6 @@ keys
 .env
 env.local
 .env
-yarn.lock
-package-lock.json
-Cargo.lock
 bos*.json
 mnt*.json
 oracle*.json
@@ -20,5 +17,4 @@ sb_randomness_config.json
 ondemand.so
 switchboard.so
 metadata.so
-yarn.lock
 local_set_up_and_tests.sh
